@@ -1,0 +1,323 @@
+/* @@@LICENSE
+* Copyright (c) 2011 - 2012 Hewlett-Packard Development Company, L.P.
+* Use of this file is subject to the license terms as set forth in the
+* file README.md found in the root directory of this repository.
+* LICENSE@@@   */
+
+body{
+	color: #ffffff;
+}
+/* Empty Data */
+.large-empty-icon {
+    width: 176px;
+	height: 176px;
+	margin: 100px auto;
+	background-image: url(../images/empty-search.png);
+}
+.enyo-pane{
+	background: url(../images/bg.png) top left repeat;	
+}
+.search-background {
+	background: url(../images/search-header-bg.png) top left repeat-x;
+}
+.enyo-scroller-scrollee{
+	margin-top: 24px;
+}
+.enyo-search-header-shadow {
+	background: url(../images/search-header-shadow.png) repeat-x 50% 0%;
+	top: auto;
+	width: 100%;
+	position: absolute;
+	z-index: 100;
+	height: 10px; 
+}
+.enyo-input{
+	border-width: 18px 18px 17px 18px;
+}
+.enyo-input, .enyo-input.enyo-input-focus {
+	-webkit-border-image: url(../images/roundedbox.png) 18 18 17 18 repeat repeat;
+	width: 570px;
+	margin: 13px auto;
+}
+.enyo-group, .enyo-group.labeled{
+	width: 708px;
+	margin: 8px auto;
+}
+.enyo-input > .enyo-input-spacing {
+	margin: -12px -4px;
+	color: #333;
+}
+.enyo-radiogroup {
+	margin: 0 auto;
+	width: 100%;
+}
+.enyo-radiobutton.enyo-middle,  .enyo-radiobutton.enyo-first, .enyo-radiobutton.enyo-last{
+	-webkit-border-image: url(../images/tab-button.png) 0 34 104 34;
+	color: #c8c8c8;
+	font-size: 15px;
+	font-weight: bold;
+}
+.enyo-radiobutton.enyo-first.enyo-button-down,  .enyo-radiobutton.enyo-middle.enyo-button-down{
+	-webkit-border-image: url(../images/tab-button.png) 49 34 54 34;
+	color: #fff;
+}
+.enyo-radiobutton.enyo-middle.enyo-button-depressed, .enyo-radiobutton.enyo-first.enyo-button-depressed{
+	-webkit-border-image: url(../images/tab-button.png) 99 34 4 34;
+	color: #fff;
+}
+.enyo-radiobutton.enyo-last.enyo-button-disabled, .enyo-radiobutton.enyo-first.enyo-button-disabled {
+	opacity: 1;
+}
+.enyo-radiobutton, .enyo-tabbutton {
+	text-shadow: #000000 1px 1px 1px;
+	text-transform: uppercase;
+	padding: 15px 10px 13px 10px;
+}
+.empty-text, .noresult {
+	text-align: center;
+	margin-top: -80px;
+	font-size: 20px;
+	color: rgba(255,255,255,0.5);
+}
+.enyo-item {
+	border-top: 1px solid #606468;
+	border-bottom: 1px solid #1d2023;
+}
+.enyo-popup .enyo-item{
+	border-top: 1px solid rgba(255, 255, 255, 0.5);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.enyo-popup .enyo-first{
+	border-top: 0;
+}
+.enyo-popup .enyo-scroller-scrollee{
+	margin-top: 0;
+	color: #333;
+}
+.enyo-popup .enyo-last{
+	border-bottom: 0;
+}
+.enyo-popup .enyo-held{
+	background: -webkit-gradient(linear, left top, left bottom, from(#d4e5f5), to(#bbd6ef));
+}
+.enyo-button {
+	-webkit-border-image: url(../images/button-up.png) 4 4 4 4 ;
+	text-transform: uppercase;
+}
+.enyo-button.enyo-button-down, .enyo-button.enyo-button-depressed  {
+	-webkit-border-image: url(../images/button-down.png) 4 4 4 4;
+	text-transform: uppercase;
+}
+.dbcontent-display1, .dbcontent-display2, .dbcontent-display3 {
+	overflow: hidden; 
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	width: 500px;
+}
+.dbcontent-display2, .dbcontent-display3{
+	color: #B8E2FF;
+	font-size: 16px;
+}
+.dbcontent-display3, .enyo-item .enyo-drawer-first, .enyo-item .enyo-drawer-middle, .enyo-item .enyo-drawer-last{
+	color: #C7C7C7;
+}
+.enyo-held {
+	background: #212325;
+}
+.enyo-item .enyo-drawer-first {
+	-webkit-border-image: url(../images/groupbox-drawer-bg-first.png) 8 4 1 5 repeat repeat;
+	border-width: 8px 4px 1px 5px;
+}
+.enyo-item .enyo-drawer-middle {
+	-webkit-border-image: url(../images/groupbox-drawer-bg-middle.png) 2 1 2 1 repeat repeat;
+	border-width: 2px 1px 2px 1px;
+}
+.enyo-item .enyo-drawer-last {
+	-webkit-border-image: url(../images/groupbox-drawer-bg-last.png) 9 4 12 3 repeat repeat;
+	border-width: 9px 4px 12px 3px;
+}
+.history-icon, .bookmark-icon, .im-image, .expand-contact-out, .expand-contact, .list-icon  {
+	height: 48px;
+	width: 48px;
+}
+.go-url, .contact-phone, .contact-skype, .contact-email { 
+	width: 32px;
+	height: 32px;
+}
+.history-icon{
+	background: url(../images/history-icon-48.png) top left no-repeat;
+}
+.bookmark-icon {
+	background: url(../images/bookmark-icon-48.png) top left no-repeat;
+}
+.im-image {  
+	background: url(../images/search-contact-message-balloon.png) top center no-repeat;
+}                                                 
+.im-image.selected {
+	background-position: bottom center;
+}	
+.expand-contact{
+	background: url(../images/expand-button.png) top center no-repeat;
+}
+.expand-contact-out {
+	background: url(../images/expand-button.png) bottom center no-repeat;
+}
+.go-url { 
+	background-image: url(../images/goto-icon-32.png);
+}
+/* Launcher styles */
+.string-highlight {                                                          
+	border-width: 10px;
+	-webkit-border-image: none;
+	margin: 0;
+	background: url(../images/underline.png) center bottom repeat-x; 
+}
+.app-wrapper{
+	margin: 10px 25px 15px 28px;
+	text-align: center;
+	text-overflow: ellipsis;
+	display: inline-block;
+	vertical-align: top;
+	-webkit-border-image: url(../images/groupbox-app-focus-empty.png) 6 6 6 6;
+	border-width: 6px 6px 6px 6px;
+}
+.name {
+	font-weight: bold;
+	font-size: 14px;
+	height: 36px;
+	width: 75px;
+	overflow: hidden; 
+	text-overflow: ellipsis;
+}
+.icon-launch {
+	width: 64px;
+	height: 64px;
+	-webkit-background-size: 64px 64px;
+}
+.icon-wrap {    
+	display: block;
+	max-width: 100px;
+	margin: 5px 10px;
+}
+.enyo-item.enyo-focus-single, .enyo-focus-single{
+	-webkit-border-image: url(../images/groupbox-focus.png) 6 6 6 6;
+	border-width: 6px 6px 6px 6px;
+}
+.enyo-item.enyo-focus-first{
+	-webkit-border-image: url(../images/groupbox-first-focus.png) 6 6 6 6;
+	border-width: 6px 6px 6px 6px;	
+}
+.enyo-item.enyo-focus-middle, .enyo-focus-middle{
+	-webkit-border-image: url(../images/groupbox-middle-focus.png) 6 6 6 6;
+	border-width: 6px 6px 6px 6px;
+}
+.enyo-item.enyo-focus-last, .enyo-focus-last{
+	-webkit-border-image: url(../images/groupbox-last-focus.png) 6 6 6 6;
+	border-width: 6px 6px 6px 6px;
+}
+.enyo-item.enyo-focus-app, .enyo-focus-app{
+	-webkit-border-image: url(../images/groupbox-app-focus.png) 6 6 6 6;
+	border-width: 6px 6px 6px 6px;
+}
+.enyo-item.enyo-focus-first-contacts{
+	background-image: url(../images/item-bg-focus.png);
+	background-repeat: repeat-x;
+	background-color: #41576a;
+	-webkit-border-radius: 10px;
+}
+.results-count-container {
+	height: 26px;
+	border-width: 11px;
+	-webkit-border-image: url(../images/filter-field-pill.png) 11 11 11 11 repeat repeat;
+	-webkit-box-sizing: border-box;
+	min-width: 25px;       
+}
+.results-count {
+	color: #fff;
+	font: 18px bold;
+	text-align: center;
+	margin-top:-10px;
+}
+.list-icon { 
+	background-position: center center;
+	background-repeat: no-repeat;
+	margin-right: 10px; 
+}
+.search-dial {
+	background-image: url(../images/icon-dial.png);
+}
+.compose-email { 
+	background-image: url(../images/compose-email.png);
+}
+.web { 
+	background-image: url(../images/go-url.png);
+}
+.save-contacts {
+	background-image: url(../images/icon-save-contact.png);
+}
+.send-sms {
+	background-image: url(../images/icon-new-chat.png);     
+}
+.add-task {
+	background-image: url(../images/icon-new-task.png);     
+}
+.gal {
+	background-image: url(../images/icon-contacts.png);     
+}
+.email {
+	background-image: url(../images/icon-email.png);
+} 	
+.generic {
+	background-image: url(../images/calendar.png);
+}
+.fav-contact {
+	background: url(../images/contacts-favorite-star.png) center center no-repeat;
+	width: 24px;
+	height: 24px;
+	display: inline-block;
+	margin: 0 0 -5px 0;
+}
+.contact-email {
+	background: url(../images/search-email.png) no-repeat;
+	margin-right: 10px;
+}
+.contact-phone, .contact-skype {
+	background: url(../images/search-dial.png) no-repeat;
+	margin-right: 10px;
+}
+.skype-image {  
+	background: url(../images/contacts-phone-icon.png) top center no-repeat;
+	width: 50px;
+	height: 50px;
+}                                                        
+.skype-image.selected {
+	background-position: bottom center;
+}
+.action-list-label {
+	margin: 13px 0 0 0;
+}
+.iconBg.enyo-button.enyo-button-down, .iconBg.enyo-button.enyo-button-depressed, .iconBg.enyo-button{
+	-webkit-border-image: none;
+	background: none;
+}
+.mask {
+	position:absolute;
+	top:0;
+	left:0;
+	height:50px;
+	width :50px;
+}
+.icon {
+	position:relative;
+	height:50px;
+	margin:10px 15px 10px 0;
+	width:50px;
+}
+.icon .mask {
+	background:url(../images/bg_icon_mask.png) no-repeat 0 0;
+}
+.icon .img {
+	-webkit-border-radius: 5px;
+	width: 50px;
+	height: 50px;
+}
