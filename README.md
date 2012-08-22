@@ -1,9 +1,11 @@
 Summary
 =======
+
 Just Type Application for webOS.
 
 Core
--------
+====
+
 This repository contains Just Type Application for webOS. 
 
 index.html - This is the main html file which creates the main JS object for the App.
